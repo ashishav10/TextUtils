@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Text Utils</title>
+    </head>
+    <body>
+        <h3>Enter your text below.</h3>
+        <form action='/analyze' method = 'get'>
+            <textarea name = 'text' style='margin: 0px; height: 81px; width: 179px;'></textarea> <br>
+            <input type="radio" name="analyze" value="removepunc"> Remove Punctuations <br><br>
+            <input type="radio" name="analyze" value="capfirst"> Capitalize First <br><br>
+            <input type="radio" name="analyze" value="spacesremove"> Remove Extra Spaces <br><br>
+            <input type="radio" name="analyze" value="newlineremove"> Remove New Line<br><br>
+            <input type="radio" name="analyze" value="charcount"> Count the number of characters<br><br>
+            <button type = 'submit'>Analyze text</button>
+        </form>
+    </body>
+</html>
